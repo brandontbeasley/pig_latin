@@ -9,5 +9,10 @@ describe PigLatin do
       result = pig_latin('yellow')
       expect(result).to eq 'ellowyay'
     end
+
+    it 'can tell if first letter is a vowel and makes the end way' do
+      result = pig_latin('elephant')
+      expect(result).to eq 'lephantway'
+    end
   end
 end
