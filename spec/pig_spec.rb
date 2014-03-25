@@ -14,5 +14,10 @@ describe PigLatin do
       result = pig_latin('elephant')
       expect(result).to eq 'lephantway'
     end
+
+    it 'works if the first letter is a consonant and 2nd is a vowel' do
+      result = pig_latin('love')
+      expect(result).to eq 'ovelay'
+    end
   end
 end

@@ -11,6 +11,8 @@ module PigLatin
       cut = string.slice!(1, string.length)
       cut << 'way'
       return cut
+    else
+      # if string[1] == ('a', 'e', 'i', 'o', 'u')
     end
   end
 end
